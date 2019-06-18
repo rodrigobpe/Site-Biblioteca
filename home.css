@@ -1,0 +1,264 @@
+/*CORPO DO SITE---------------------------------------------------------------------------------------------------------------------------------------------*/
+
+*{margin: 0; padding: 0;
+ font-family: 'lato', sans-serif;
+}
+
+body{
+
+
+	background-image:linear-gradient(rgba(0,0,0,0.0	),rgba(0,0,0,0.0)), url(IMG/fundo_site.png);
+	background-size: 2000px;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+
+}
+/*MENU----------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+.menu-nav{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	list-style: none;
+}
+	
+
+.menu {
+	width: 100%; /*largura do menu*/	
+	margin: auto; /*para centralizar o menu*/
+	position: fixed;
+	background-color: #E6E6E6;
+	border-bottom: #BDBDBD 1px solid;
+	
+
+
+}
+
+.menu ul {
+
+	padding: 15px; /*preenchimento do menu, ao redor dos botões*/
+	list-style: none; /*para tirar o estilo original da lista*/
+	font-size: 20px; /*tamano da fonte*/
+	position: relative;
+	left: 25%;
+	
+
+
+}
+
+.menu  li {
+	display: inline-block; /*colocar em linha*/
+	
+
+}
+
+.menu ul li a {
+	bottom: 10px;
+	font-size: 25px;
+	text-decoration: none; /*para tirar o traçado da link*/
+	border-radius: 25px; /*arrendondar os cantos em px*/
+	color: black ; /*cor do link*/
+	padding: 10px;
+	margin-right: 20px;
+	font-family: 'amatic sc', cursive;
+	border: 0.75px #BDBDBD solid;
+	text-align: 
+}
+
+.menu ul li a.livro{
+	padding-right: 40px;
+	padding-left: 40px;
+	
+}
+
+/* CAIXA DE PESQUISA------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+.search-box{
+
+	position: fixed;
+	left: 70%;
+	top:4.3%;
+	transform: translate(-50%,-50%);
+	background-color: #2f3640;
+	height: 50px;
+	border-radius: 40px;
+	padding: 10px;
+
+}
+
+.search-box:hover > .search-txt{
+	width: 240px;
+	padding: 0% 6px;
+
+}
+
+.search-box:hover > .search-btn{
+background: #BDBDBD;
+padding: 1px;
+color: #2f3640;
+
+}
+
+.search-btn{
+	color: #BDBDBD;
+	float: right;
+	width: 32.5px;
+	height: 32.5px;
+	border-radius: 50%;
+	background-color: #2f3640;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0.4s;
+}
+
+.search-txt{
+	border:none;
+	background:none;
+	outline: none;
+	float: left;
+	padding: 0px;
+	color: #BDBDBD;	
+	font-size: 16px;
+	transition: 0.4s;
+	line-height: 32.5px;
+	width:0px;
+}
+
+
+
+/*Rodapé do Site---------------------------------------------------------------------------------------------------------------------------------------------*/
+
+footer{
+
+    text-align: center;
+    color: #fff;
+    position : absolute;
+    bottom:0%;
+    left: 0;
+    height: 50px;
+    width: 100%;
+    background-color: #000;
+
+}
+
+footer a{
+    position: relative;
+    top: 30%;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Amatic SC', cursive;
+    font-size: 20px;
+}
+
+
+
+/*Carousel 1-----------------------------------------------------*/
+
+
+section.awSlider .carousel{
+  
+display:table;
+  z-index:2;
+  -moz-box-shadow: 0 0 4px #444;
+	-webkit-box-shadow: 0 0 4px #444;
+	box-shadow: 0 0 15px rgba(1,1,1,.5);
+}
+
+section.awSlider{
+  margin:30px auto;
+  padding:30px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  width: 70%;
+  display:table;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+section.awSlider:hover > img{
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  opacity:1;
+}
+
+section.awSlider img{
+   pointer-events: none;
+}
+
+section.awSlider > img{
+  position:absolute;
+  transform: translate(-50%,-50%);
+  top: 9%;
+  width: 93%;
+  z-index:1;
+  transition:all .3s;
+  filter: blur(1.8vw);
+  -webkit-filter: blur(2vw);
+  -moz-filter: blur(2vw); 
+  -o-filter: blur(2vw); 
+  -ms-filter: blur(2vw);
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  opacity:.5;
+}
+
+/* CAROUSEL 2--------------------------------------------------------------------------------- */
+
+
+
+body > ul {
+	position: absolute;
+	
+	top: 50%;
+	width: 1000px;
+	height: 200px; 
+	left: 50%;
+	margin-left: -400px;
+	margin-top: -130px;
+}
+
+ul > li {
+	width: 25%;
+	list-style-type: none;
+	position: absolute;
+	top: 0;
+	padding: 10px;
+	height: 200px; 
+	opacity: 0;
+	padding-top: 40px;
+	text-align: center;
+	transition: 1s opacity; 
+}
+
+ul li img{
+	width: 200px;
+	height:  280px;
+
+}	.active {
+	opacity: 1;
+}
+
+p {
+	font-family: sans-serif;
+	font-size: 13px;
+color: #646566;
+	line-height: 1.5em;
+}
+
+ strong { 
+color: rgb(0, 0, 0);
+font-weight: 700;
+	font-size: 60px; 
+line-height: 100px;
+ 
+}

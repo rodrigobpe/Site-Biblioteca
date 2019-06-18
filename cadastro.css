@@ -1,0 +1,162 @@
+﻿*{
+    padding: 0;
+    border: 0;
+
+}
+
+/*corpo do site ----------------------------------------------------------------------------------------------*/
+
+body{
+   
+    background-image:linear-gradient(rgba(0, 0, 0, 0.603),rgba(0, 0, 0, 0.2)), url(IMG/fundo_Login_Cadastro.png);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+    
+}
+
+.Apresentacao p.Bem_vindo{
+
+    font-family: 'Amatic SC', cursive;
+    font-size: 80px;
+    color: white;
+    position: absolute;
+    top: 38%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+
+}
+
+.Apresentacao p.Descricao{
+
+    font-family: 'Amatic SC', cursive;
+    font-size: 30px;
+    color: white;
+    position:absolute;
+    top: 49%;
+    left:30%;
+    transform: translate(-50%,-50%);
+}
+/* Formulário Cadastro---------------------------------------------------------------------------*/
+
+
+.Cadastro{
+	position: absolute;
+	top: 48%;
+	left: 80%;
+	transform: translate(-50%, -50%);
+    width: 350px;
+    height: 850px;
+	padding: 30px;
+	background: rgba(0,0,0,.5);
+	box-sizing: border-box;
+	box-shadow: 0 15px 25px rgba(0,0,0,.5);
+	border-radius: 10px;}
+
+.Cadastro p.Titulo_cadastro{
+
+    font-family: 'Amatic SC', cursive;
+    font-size: 50px;
+    color: white;
+    position: absolute ;
+    top: -0px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+
+form{
+position: absolute;
+top: 10%;
+
+
+}
+
+    
+
+
+.Cadastro .inputBox input{
+
+    position: relative;  
+    font-family: 'Amatic SC', cursive;
+    width: 100%;
+	padding: 10px 0;
+	font-size: 17px;
+    color: black;
+    border-radius: 5px;
+	letter-spacing: 1px;
+	margin-bottom: 30px;
+	border: none;
+	border-bottom:1px solid black;
+}
+
+
+
+.Cadastro .inputBox label{
+    position: relative; 
+    font-family: 'Amatic SC', cursive;
+    letter-spacing: 1px;
+    padding: 10px 0;
+    font-size: 20px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+
+
+.Cadastro input[type="submit"]{
+	background: transparent;
+	border: none;
+	outline: none;
+	color: #fff;
+	background: #6ab04c;
+	padding: 10px 20px;
+	cursor: pointer;
+    border-radius: 10px;
+    position: absolute;
+    left: 15%;
+}
+
+    
+    
+
+
+.entrar input[type="button"]{
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #6ab04c;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    position: absolute;
+    top: 84.21%;
+    left: 80%;
+}
+    
+
+/*Rodapé do Site---------------------------------------------------------------------------------------------------------------------------------------------*/
+
+footer{
+
+    text-align: center;
+    color: #fff;
+    position :absolute;
+    top: 100%;
+    left: 0;
+    height: 50px;
+    width: 100%;
+    background-color: #000;
+
+}
+
+footer a{
+    position: relative;
+    top: 30%;
+    font-family: 'Amatic SC', cursive;
+    font-size: 20px;
+}
